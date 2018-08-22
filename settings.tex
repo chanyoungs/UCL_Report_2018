@@ -1,0 +1,42 @@
+\documentclass{report}
+\usepackage{setspace}
+%\usepackage{subfigure}
+
+\pagestyle{plain}
+\usepackage{amssymb,graphicx,color}
+\usepackage{amsfonts}
+\usepackage{latexsym}
+\usepackage{a4wide}
+\usepackage{amsmath}
+\usepackage[toc,page]{appendix}
+\usepackage{listings} % For including code snippets see https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings
+
+\usepackage{hyperref} % For hyperlinks
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+\newtheorem{theorem}{THEOREM}
+\newtheorem{lemma}[theorem]{LEMMA}
+\newtheorem{corollary}[theorem]{COROLLARY}
+\newtheorem{proposition}[theorem]{PROPOSITION}
+\newtheorem{remark}[theorem]{REMARK}
+\newtheorem{definition}[theorem]{DEFINITION}
+\newtheorem{fact}[theorem]{FACT}
+\newtheorem{problem}[theorem]{PROBLEM}
+\newtheorem{exercise}[theorem]{EXERCISE}
+\def \set#1{\{#1\} }
+
+\newenvironment{proof}{
+PROOF:
+\begin{quotation}}{
+$\Box$ \end{quotation}}
+
+\newcommand{\nats}{\mbox{\( \mathbb N \)}}
+\newcommand{\rat}{\mbox{\(\mathbb Q\)}}
+\newcommand{\rats}{\mbox{\(\mathbb Q\)}}
+\newcommand{\reals}{\mbox{\(\mathbb R\)}}
+\newcommand{\ints}{\mbox{\(\mathbb Z\)}}

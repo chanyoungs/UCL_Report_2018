@@ -1,0 +1,29 @@
+
+\input{settings.tex} 
+
+% Cover Page
+\input{cover_page.tex}
+
+\begin{document}
+    \input{abstract.tex}
+
+    \tableofcontents
+    
+    \setcounter{page}{1}
+    
+    % Chapters
+    \input{chs/01_introduction.tex}
+    \input{chs/02_related_work.tex}
+    \input{chs/03_etc.tex}
+    
+    % Appendices
+    \appendix
+    
+        % References
+        \addcontentsline{toc}{chapter}{References}
+        \bibliographystyle{unsrt}
+        \bibliography{references}
+        
+        \input{appendix/01_appendix.tex}
+
+\end{document}
