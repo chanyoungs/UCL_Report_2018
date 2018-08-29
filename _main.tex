@@ -14,16 +14,19 @@
     % Chapters
     \input{chs/01_introduction.tex}
     \input{chs/02_related_work.tex}
-    \input{chs/03_etc.tex}
+    \input{chs/03_methodology.tex}
     
     % Appendices
     \appendix
     
         % References
         \addcontentsline{toc}{chapter}{References}
-        \bibliographystyle{unsrt}
+        % \bibliographystyle{unsrt}
+        \bibliographystyle{plainnat}
         \bibliography{references}
         
-        \input{appendix/01_appendix.tex}
+        \begin{appendices}
+            \input{appendix/01_appendix.tex}
+        \end{appendices}
 
 \end{document}

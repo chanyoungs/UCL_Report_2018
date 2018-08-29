@@ -1,4 +1,40 @@
-\begin{appendices}
 \chapter{Some Appendix}
-    The contents...
-\end{appendices}z
+    This is just a bare minimum to get started.  There is unlimited guidance on using latex, e.g. {\tt https://en.wikibooks.org/wiki/LaTeX}.   You are still responsible to check the detailed requirements of a project, including formatting instructions, see \\
+    {\tt https://moodle.ucl.ac.uk/pluginfile.php/3591429/mod\_resource/content/7/UGProjects2017.pdf}.
+    Leave at least a line of white space when you want to start a new paragraph.
+    
+    Mathematical expressions are placed inline between dollar signs, e.g. $\sqrt 2, \sum_{i=0}^nf(i)$, or in display mode
+    \[ e^{i\pi}=-1\] and another way, this time with labels,
+    \begin{align}
+    \label{line1} A=B\wedge B=C&\rightarrow A=C\\
+    &\rightarrow C=A\\
+    \intertext{note that}
+    n!&=\prod_{1\leq i\leq n}i \\
+    \int_{x=1}^y \frac 1 x \mathrm{d}x&=\log y
+    \end{align}
+    We can refer to labels like this \eqref{line1}.
+    
+    Often lots of citations here (and elsewhere), e.g. Bibtex can help with this, but is not essential. If you want pictures, try
+
+    You can use 
+    \begin{itemize}
+    \item lists
+    \item like this
+    \end{itemize}
+    or numbered
+    \begin{enumerate}
+    \item like this,
+    \item or this
+    \end{enumerate}
+    but don't overdo it.
+    
+    If you have a formal theorem you might try this.
+    \begin{definition}\label{def}
+    See definition~\ref{def}.
+    \end{definition}
+    \begin{theorem}
+    For all $n\in\nats,\; 1^n=1$.
+    \end{theorem}
+    \begin{proof}
+    By induction over $n$.
+    \end{proof}

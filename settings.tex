@@ -1,4 +1,5 @@
 \documentclass{report}
+% \documentclass{article}
 \usepackage{setspace}
 %\usepackage{subfigure}
 
@@ -8,15 +9,20 @@
 \usepackage{latexsym}
 \usepackage{a4wide}
 \usepackage{amsmath}
+\usepackage{bm} % For Bold maths symbols \bm{.}
 \usepackage[toc,page]{appendix}
 \usepackage{listings} % For including code snippets see https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings
+\usepackage{float} % For hard positioning figures with option 'H'
+\usepackage[round]{natbib} % Harvard reference style
+\usepackage{xcolor} % For drawing coloured rectangle frames around text \fcolorbox{red}{blue}{Text with a red frame on blue background}
 
 \usepackage{hyperref} % For hyperlinks
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
-    filecolor=magenta,      
+    filecolor=green,      
     urlcolor=cyan,
+    citecolor=blue,
 }
 
 \newtheorem{theorem}{THEOREM}
